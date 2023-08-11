@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Personal Boost",
+  "description": "Personal Boost",
+  "version": "1.0.0",
+  "icons": {
+    "16": "/assets/profile.png",
+    "32": "/assets/profile.png",
+    "48": "/assets/profile.png",
+    "128": "/assets/profile.png"
+  },
+  "author": "ysm-dev",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://*/*"],
+      "js": ["./dist/main.umd.js"]
+    }
+  ]
+}
